@@ -10,16 +10,30 @@ $oswald:'Oswald', sans-serif;
 $primaryColor:#2260BF;
 $white:#fff;
 $active:#70C9FF;
+$brown:#FDA04E;
+$blackish:#161A25;
+$bgOne:#F4F6F8;
 
 $bgPrimary:$primaryColor;
 
 $txtWhite:$white;
 $txtPrimary:$primaryColor;
+$txtbgOne:$bgOne;
 
 .bgPrimary{
     background-color: $primaryColor;
 }
+ .bgBrown{
+     background-color:$brown;
+ }
 
+ .bgOne{
+     background-color: $bgOne;
+ }
+
+ .bgBlackish{
+     background-color: $blackish;
+ }
 
 // GLOBAL
 body{
@@ -36,19 +50,62 @@ img{
 
 a{
     text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.px14{
+font-size: 14px;
+}
+
+.roboto{
+    font-family: $roboto;
+}
+
+.oswald{
+    font-family: $oswald;
+}
+
+p{
+    font-weight: 500;
+    color: #000;
+}
+
+.btn-brown{
+    transition: all 0.3s ease-in-out;
+  &:hover{
+    background: #fff;
+    border:1px solid $brown;
+     a{
+        color: $brown;
+     }
+  }  
+}
+
+figure img.object-fit-cover{
+    object-fit: cover;
+}
+img.bottom-mask{
+    mask-image:  linear-gradient(to top, rgba(255,255,255,0), rgba(0, 0, 0, 1));
+
+}
+
+.section-title{
+    font-family: $oswald;
+    color: $txtPrimary;
 }
 
 
 
 // FIGURE
-// figure.main-logo{
-//     width: 50%;
-//     height: auto;
-   
-// }
+
 figure.img-50px{
     width: 50px;
     height: 50px;
+}
+
+figure.img-25px{
+    width: 25px;
+    height: 25px;
 }
 
 .main-logo-timer{
@@ -90,3 +147,30 @@ figure.img-50px{
 
     }
 }
+
+
+// LINKS
+a.primary{
+    color: #102c57;
+
+    &:hover{
+        color: $txtPrimary;
+    }
+}
+
+a.secondary{
+    color: #000;
+    &:hover{
+        color: $txtPrimary;
+    }
+}
+
+a.tertiary{
+    color: $txtWhite;
+    &:hover{
+        color: #000;
+    }
+}
+
+// COLORS
+

@@ -5,6 +5,18 @@
   background-color: #2260BF;
 }
 
+.bgBrown {
+  background-color: #FDA04E;
+}
+
+.bgOne {
+  background-color: #F4F6F8;
+}
+
+.bgBlackish {
+  background-color: #161A25;
+}
+
 body {
   background-color: #fff;
   max-width: 1920px;
@@ -19,11 +31,66 @@ img {
 
 a {
   text-decoration: none;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.px14 {
+  font-size: 14px;
+}
+
+.roboto {
+  font-family: "Roboto", sans-serif;
+}
+
+.oswald {
+  font-family: "Oswald", sans-serif;
+}
+
+p {
+  font-weight: 500;
+  color: #000;
+}
+
+.btn-brown {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-brown:hover {
+  background: #fff;
+  border: 1px solid #FDA04E;
+}
+
+.btn-brown:hover a {
+  color: #FDA04E;
+}
+
+figure img.object-fit-cover {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+img.bottom-mask {
+  -webkit-mask-image: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0)), to(black));
+  -webkit-mask-image: linear-gradient(to top, rgba(255, 255, 255, 0), black);
+          mask-image: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0)), to(black));
+          mask-image: linear-gradient(to top, rgba(255, 255, 255, 0), black);
+}
+
+.section-title {
+  font-family: "Oswald", sans-serif;
+  color: #2260BF;
 }
 
 figure.img-50px {
   width: 50px;
   height: 50px;
+}
+
+figure.img-25px {
+  width: 25px;
+  height: 25px;
 }
 
 .main-logo-timer {
@@ -56,4 +123,28 @@ figure.img-50px {
 .home-modal figure {
   width: 200px;
   height: auto;
+}
+
+a.primary {
+  color: #102c57;
+}
+
+a.primary:hover {
+  color: #2260BF;
+}
+
+a.secondary {
+  color: #000;
+}
+
+a.secondary:hover {
+  color: #2260BF;
+}
+
+a.tertiary {
+  color: #fff;
+}
+
+a.tertiary:hover {
+  color: #000;
 }
