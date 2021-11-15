@@ -17,6 +17,18 @@
   background-color: #161A25;
 }
 
+.bgSiteFooter {
+  background-color: #E0E9F6;
+}
+
+.bgLifeStyle {
+  background-color: #728146;
+}
+
+.modal-backdrop {
+  z-index: 0;
+}
+
 body {
   background-color: #fff;
   max-width: 1920px;
@@ -97,6 +109,18 @@ figure.img-25px {
   font-size: 12px;
 }
 
+figure.img-hover-zoom img {
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
+}
+
+figure.img-hover-zoom:hover img {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
 .main-nav {
   font-family: "Oswald", sans-serif;
   background-color: #2260BF;
@@ -147,4 +171,12 @@ a.tertiary {
 
 a.tertiary:hover {
   color: #000;
+}
+
+a.fourth {
+  color: grey;
+}
+
+a.fourth:hover {
+  color: #2260BF;
 }

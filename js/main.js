@@ -1,9 +1,10 @@
-$('#homeFeaturedCarousel').slick({
-    infinite: true,
+$('#homeFeaturedCarousel,#homePhotoCarousel,#homeItCarousel,#homeSportsCarousel').slick({
+    infinite: false,
+  
     slidesToShow: 4,
     slidesToScroll: 1,
-    nextArrow:'<button class="position-absolute top-50 start-100 translate-middle rounded-circle text-danger border-0"><i class="fi-xnlrxl-chevron"></i></button>',
-    prevArrow:'<button class="position-absolute top-50 start-0 translate-middle rounded-circle text-danger border-0 "><i class="fi-xnllxl-chevron"></i></button>',
+    nextArrow:'<button class="position-absolute top-50 start-100 translate-middle rounded-circle text-danger border-0 p-1 ms-4"><i class="fi-xnlrxl-chevron"></i></button>',
+    prevArrow:'<button class="position-absolute top-50 start-0 translate-middle rounded-circle text-danger border-0 p-1 me-5 "><i class="fi-xnllxl-chevron"></i></button>',
     responsive:[
         {
             breakpoint:1024,
@@ -14,8 +15,15 @@ $('#homeFeaturedCarousel').slick({
         {
             breakpoint:600,
         settings:{
-            slidesToShow:1
+            autoplay:true,
+            autoplaySpeed: 2000,
+            slidesToShow:1,
+            arrows:false
         }
         }
     ]
   });
+
+
+
+

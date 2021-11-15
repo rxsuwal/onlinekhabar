@@ -13,6 +13,8 @@ $active:#70C9FF;
 $brown:#FDA04E;
 $blackish:#161A25;
 $bgOne:#F4F6F8;
+$siteFooter:#E0E9F6;
+$lifestyle:#728146;
 
 $bgPrimary:$primaryColor;
 
@@ -35,7 +37,18 @@ $txtbgOne:$bgOne;
      background-color: $blackish;
  }
 
+ .bgSiteFooter{
+    background-color: $siteFooter;
+ }
+
+ .bgLifeStyle{
+     background-color: $lifestyle;
+ }
+
 // GLOBAL
+.modal-backdrop{
+    z-index: 0;
+}
 body{
     background-color: #fff;
     max-width: 1920px;
@@ -112,6 +125,16 @@ figure.img-25px{
     font-size: 12px;
 }
 
+figure.img-hover-zoom{
+  img{
+    transition: transform 0.2s;
+  }
+
+    &:hover img{
+        transform: scale(1.05);
+    }
+}
+
 // NAVBAR
 .main-nav{
     font-family: $oswald;
@@ -169,6 +192,13 @@ a.tertiary{
     color: $txtWhite;
     &:hover{
         color: #000;
+    }
+}
+
+a.fourth{
+    color: grey;
+    &:hover{
+        color: $txtPrimary;
     }
 }
 
